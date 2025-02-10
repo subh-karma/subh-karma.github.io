@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhasish Karmakar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a; /* Deep Black */
+            color: #e0e0e0; /* Light Gray */
+        }
+        .gold-text {
+            color: #ffd700; /* Gold */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #1a1a1a, #4b3f1f); /* Dark to Gold Gradient */
+        }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: #1e1e1e; /* Slightly Lighter Black */
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        /* Gold Glow Effect */
+        .gold-glow {
+            text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #ffd700,
+                0 0 40px #ffd700,
+                0 0 80px #ffd700,
+                0 0 90px #ffd700;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <!-- Header Section -->
+    <header class="text-center py-12 gradient-bg text-white shadow-lg fade-in">
+        <h1 class="text-5xl font-bold gold-glow">Subhasish Karmakar</h1>
+        <p class="text-xl mt-2 gold-glow">Data Scientist | AI Enthusiast | Developer</p>
+        <p class="mt-2 gold-glow">Pune, Maharashtra | <a href="mailto:subhasishk74@gmail.com" class="gold-text hover:underline">subhasishk74@gmail.com</a></p>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="container mx-auto px-6 py-12 text-center fade-in">
+        <h2 class="text-4xl font-semibold gold-text">About Me</h2>
+        <p class="mt-4 text-lg">
+            I am a passionate data scientist with expertise in Data Analytics, Artificial Intelligence, and Machine Learning. 
+            With hands-on experience in Python, SQL, TensorFlow, and various AI technologies, I strive to solve real-world problems through innovative solutions.
+        </p>
+        <div class="mt-6">
+            <a href="#projects" class="gold-text font-semibold hover:underline">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto px-6 py-12 fade-in">
+        <h2 class="text-4xl font-semibold gold-text">Education</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">Masters of Computer Application</h3>
+                <p class="mt-2">Modern College, Ganeshkhind, Pune University</p>
+                <p class="mt-2">Aug. 2022 – July 2024</p>
+            </div>
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">Bachelors of Computer Application</h3>
+                <p class="mt-2">SM Joshi, Pune University</p>
+                <p class="mt-2">Aug. 2019 – June 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container mx-auto px-6 py-12 fade-in">
+        <h2 class="text-4xl font-semibold gold-text">Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">Data Science Intern</h3>
+                <p class="mt-2">Codenera | Sep 2023 – May 2024</p>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Analyzed and preprocessed data using algorithms and IT tools.</li>
+                    <li>Created reports with visualizations, including graphs, charts, and dashboards.</li>
+                    <li>Worked with Python, Cloud Platforms, Jupyter Notebook, Tableau, and GitHub.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">Research and Data Analyst</h3>
+                <p class="mt-2">Vedas Global Solution | Dec 2021 – March 2022</p>
+                <ul class="list-disc pl-6 mt-2">
+                    <li>Conducted data management and preprocessing for consistency and accuracy.</li>
+                    <li>Resolved customer queries through a structured ticketing system.</li>
+                    <li>Performed web scraping for lead generation and business intelligence.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-6 py-12 fade-in">
+        <h2 class="text-4xl font-semibold gold-text">Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">AgriTech - Grain Management System</h3>
+                <p class="mt-2">Developed a web-based application for grain distribution and inventory management using Django and REST API.</p>
+                <a href="https://github.com/subh-karma/AgriTrack" class="gold-text font-semibold hover:underline">View Project</a>
+            </div>
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">GestureText - AI Sign Language Recognition</h3>
+                <p class="mt-2">Created an AI-powered system using OpenCV and TensorFlow to translate hand gestures into text.</p>
+                <a href="https://github.com/subh-karma/GestureText" class="gold-text font-semibold hover:underline">View Project</a>
+            </div>
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">Blog Buddy - AI Blogging Assistant</h3>
+                <p class="mt-2">Designed an AI-based blogging assistant using Llama 2, Streamlit, and LangChain to generate structured content.</p>
+                <a href="https://github.com/subh-karma/Blog_Buddy_GenAi" class="gold-text font-semibold hover:underline">View Project</a>
+            </div>
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">Stock Predictor - AI Financial Forecasting</h3>
+                <p class="mt-2">Built a stock market predictor using machine learning models like LSTM and ARIMA.</p>
+                <a href="https://github.com/subh-karma/StockPredictor" class="gold-text font-semibold hover:underline">View Project</a>
+            </div>
+            <div class="card">
+                <h3 class="text-2xl font-semibold gold-text">ChatBot AI - Intelligent Conversational Agent</h3>
+                <p class="mt-2">Developed a chatbot using NLP techniques and GPT models to assist users with queries.</p>
+                <a href="https://github.com/subh-karma/ChatBotAI" class="gold-text font-semibold hover:underline">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto px-6 py-12 fade-in">
+        <h2 class="text-4xl font-semibold gold-text">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold gold-text">Programming Languages</h3>
+                <p class="mt-2">Python, SQL, JavaScript, HTML/CSS</p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-semibold gold-text">Frameworks & Libraries</h3>
+                <p class="mt-2">TensorFlow, PyTorch, Django, Pandas, NumPy, SciPy</p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-semibold gold-text">Tools</h3>
+                <p class="mt-2">Jupyter Notebook, Git, Docker, Tableau, Power BI, MS Excel</p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-semibold gold-text">AI/ML Expertise</h3>
+                <p class="mt-2">
+                    Machine Learning (Supervised & Unsupervised), Deep Learning, Neural Networks, NLP, Computer Vision, Reinforcement Learning
+                </p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-semibold gold-text">Data Science</h3>
+                <p class="mt-2">
+                    Data Preprocessing, Feature Engineering, Statistical Modeling, Data Visualization, Exploratory Data Analysis (EDA)
+                </p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-semibold gold-text">Cloud & DevOps</h3>
+                <p class="mt-2">
+                    AWS, Google Cloud Platform (GCP), CI/CD Pipelines, Kubernetes, REST APIs
+                </p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-semibold gold-text">Soft Skills</h3>
+                <p class="mt-2">
+                    Analytical Thinking, Problem Solving, Adaptability, Team Collaboration, Communication
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container mx-auto px-6 py-12 fade-in">
+        <h2 class="text-4xl font-semibold gold-text">Certifications</h2>
+        <ul class="list-disc pl-6 mt-6">
+            <li>Data Science Training from Codenera</li>
+            <li>Data Science by BCGX</li>
+            <li>Quant-finance Research by JP Morgan Chase</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-6 py-12 fade-in">
+        <h2 class="text-4xl font-semibold gold-text">Contact Me</h2>
+        <p class="text-center mt-4">Feel free to reach out for collaborations or inquiries!</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="mailto:subhasishk74@gmail.com" class="gold-text font-semibold hover:underline">Email</a>
+            <a href="https://www.linkedin.com/in/subhasish-karmakar-a801951ba/" class="gold-text font-semibold hover:underline">LinkedIn</a>
+            <a href="https://github.com/subh-karma" class="gold-text font-semibold hover:underline">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-6 gradient-bg text-white fade-in">
+        <p>&copy; 2025 Subhasish Karmakar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
